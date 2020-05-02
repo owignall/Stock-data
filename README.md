@@ -2,7 +2,7 @@
 
 **Version 1.0.0**
 
-This Django application will retrive data on a given stock using webscraping and return summary data to the user. If anyone would like access to the webscraping code it can be accessed in "Stock-data\stock_data_project\stock_data_app\fetch.py"
+This Django application will retrieve data on a given stock using webscraping and return summary data to the user. If anyone would like access to the webscraping code it can be accessed in "Stock-data\stock_data_project\stock_data_app\fetch.py"
 
 ---
 
