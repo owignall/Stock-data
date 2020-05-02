@@ -1,0 +1,42 @@
+{% extends 'stock_data_app/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+	<h1>Stock Quotes</h1>
+	<h3>Input</h3>
+	{% load crispy_forms_tags %}
+	<form method="post">
+		{% csrf_token %}
+		{{ form|crispy }}
+		<button type="submit", name="Find">Find</button>
+	</form>
+	{% if run %}
+		<div class="drop">
+			<h3>Output</h3>
+			<h5>{{code}}</h5>
+			<ul>
+				<li>Live price: {{Live_price}}</li>
+				<li>Change: {{Change}}</li>
+
+				<li>Previous close: {{Previous_close}}</li>
+				<li>Open: {{Open}}</li>
+				<li>Bid: {{Bid}}</li>
+				<li>Ask: {{Ask}}</li>
+				<li>Day's range: {{Days_range}}</li>
+				<li>52-week range: {{52_week_range}}</li>
+				<li>Volume: {{Volume}}</li>
+				<li>Avg. volume: {{Avg_volume}}</li>
+				<li>Market cap: {{Market_cap}}</li>
+				<li>Beta (5Y monthly): {{Beta_5Y_monthly}}</li>
+				<li>PE ratio (TTM): {{PE_ratio_TTM}}</li>
+				<li>EPS (TTM): {{EPS_TTM}}</li>
+				<li>Earnings date: {{Earnings_date}}</li>
+				<li>Forward dividend & yield: {{Forward_dividend_and_yield}}</li>
+				<li>Ex-dividend date: {{Ex_dividend_date}}</li>
+				<li>1y target est: {{1y_target_est}}</li>
+			</ul>
+		</div>
+	{% endif %}
+{% endblock %}
