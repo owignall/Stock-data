@@ -7,11 +7,13 @@
 	<h1>Stock Quotes</h1>
 	<h3>Input</h3>
 	{% load crispy_forms_tags %}
-	<form method="post">
-		{% csrf_token %}
-		{{ form|crispy }}
-		<button type="submit", name="Find">Find</button>
-	</form>
+	<div class="w-25">
+		<form method="post">
+			{% csrf_token %}
+			{{ form|crispy }}
+			<button type="submit" class="btn btn-secondary", name="Find">Find</button>
+		</form>
+	</div>
 	{% if run %}
 		<div class="drop">
 			<h3>Output</h3>
