@@ -18,10 +18,10 @@ This Django application will retrieve data on a given stock using webscraping an
 
 ## Contributors
 
-- Oscar Toby Wignall <oscarwignall@btinternet.com>
+- Oscar Wignall <oscarwignall@btinternet.com>
 
 ---
 
 ## License & Copyright
 
-© Oscar Toby Wignall
+© Oscar Wignall
